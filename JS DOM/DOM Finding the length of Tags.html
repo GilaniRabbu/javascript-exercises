@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Finding the length of Tags</title>
+</head>
+
+<body>
+    <p>Click the button to open a new window and add some content</p>
+    <p>5</p>
+    <p>4</p>
+    <p>3</p>
+    <p>2</p>
+    <p>1</p>
+
+    <button onclick="Demo()">CliCk</button>
+
+    <script>
+        function Demo() {
+            let MyItems = document.getElementsByTagName("p");
+            let ItemCount = MyItems.length;
+            console.log(ItemCount);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Finding Elements</title>
+</head>
+
+<body>
+    <h1 id="title">ElementById</h1><br>
+
+
+
+    <h2 class="my-class">ElementsByClassName</h2>
+    <h3 class="my-class">ElementsByClassName</h3>
+    <button class="my-class">ElementsByClassName</button><br><br><br>
+
+
+
+    <h2 name="my-class">ElementsByName</h2>
+    <h3 name="my-class">ElementsByName</h3>
+    <button name="my-class">ElementsByName</button><br><br><br>
+
+
+
+    <p>P1</p>
+    <p>P2</p>
+    <p>P3</p>
+
+    <script>
+        var MyElement = document.getElementById("title");
+        MyElement.innerHTML = "Id Manipulated";
+
+
+
+        var MyElement = document.getElementsByClassName("my-class");
+        MyElement[2].innerHTML = "ClassName Manipulated";
+
+
+
+        var MyElement = document.getElementsByName("my-class");
+        MyElement[1].innerHTML = "Name Manipulated";
+
+
+
+        var MyElement = document.getElementsByTagName("p");
+        MyElement[0].innerHTML = "TagName Manipulated";
+    </script>
+</body>
+
+</html>
