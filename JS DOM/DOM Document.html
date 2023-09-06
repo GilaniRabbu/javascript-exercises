@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Document</title>
+</head>
+
+<body>
+    <p>Click the button to open a new window and add some content</p>
+
+    <button onclick="Demo()">CliCk</button>
+
+    <script>
+        // Cookie
+        // function Demo() {
+        //     var info = document.cookie;
+        //     document.getElementsByTagName('p')[0].innerHTML = info;
+        // }
+
+
+
+        // Domain
+        // function Demo() {
+        //     var info = document.domain;
+        //     document.getElementsByTagName('p')[0].innerHTML = info;
+        // }
+
+
+
+        // Last Modified
+        // function Demo() {
+        //     var info = document.lastModified;
+        //     document.getElementsByTagName('p')[0].innerHTML = info;
+        // }
+
+
+
+        // Title
+        // function Demo() {
+        //     var info = document.title;
+        //     document.getElementsByTagName('p')[0].innerHTML = info;
+        // }
+
+
+
+        // Showing URL
+        // function Demo() {
+        //     var info = document.URL;
+        //     document.getElementsByTagName('p')[0].innerHTML = info;
+        // }
+
+
+
+        // Replace
+        function Demo() {
+            document.open('text/html', 'replace');
+            document.write("<h2>Hello World! Learning about the HTML DOM is fun!</h2>");
+            document.close();
+        }
+    </script>
+</body>
+
+</html>
