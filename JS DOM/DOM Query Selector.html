@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Query Selector</title>
+</head>
+
+<body>
+    <h1>H1</h1>
+
+    <h2 id="MyId">H2</h2>
+
+    <h3 class="my-class">H3</h3>
+
+    <h4 name="MyName">H4</h4>
+
+    <input placeholder="...">
+
+    <br><br>
+
+    <button onclick="Change()">Change</button>
+
+    <script>
+        function Change() {
+            document.querySelector("h1").innerHTML = 'Hello H1';
+            document.querySelector("#MyId").innerHTML = 'Hello H2';
+            document.querySelector(".my-class").innerHTML = 'Hello H3';
+            document.querySelector("h4[name='MyName']").innerHTML = 'Hello H4';
+            document.querySelector("input").placeholder = 'New Placeholder';
+        }
+    </script>
+</body>
+
+</html>
