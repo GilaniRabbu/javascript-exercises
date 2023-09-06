@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Form Input Value</title>
+</head>
+
+<body>
+    <input id="num1" type="text"><br><br>
+    <input id="num2" type="text"><br><br>
+
+    <button onclick="AddTwoNumber()">Add</button>
+
+    <script>
+        // HTML DOM FINDING FORM INPUT VALUE
+        // Please input a Number
+        function AddTwoNumber() {
+            var x = document.getElementById("num1").value;
+            var y = document.getElementById("num2").value;
+            var z = parseFloat(x) + parseFloat(y);
+            console.log(z);
+        }
+    </script>
+</body>
+
+</html>
