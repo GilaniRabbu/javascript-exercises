@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Append Create Element</title>
+</head>
+
+<body>
+    <ol id="MyItems"></ol><br><br>
+
+    <input id="MyInput"><br><br>
+
+    <button onclick="AddItems()">ADD</button>
+
+    <script>
+        function AddItems() {
+            var itemValue = document.getElementById("MyInput").value;
+            var listItem = document.createElement('li');
+            listItem.innerHTML = itemValue;
+
+            var MyItems = document.getElementById('MyItems');
+            MyItems.appendChild(listItem);
+        }
+    </script>
+</body>
+
+</html>

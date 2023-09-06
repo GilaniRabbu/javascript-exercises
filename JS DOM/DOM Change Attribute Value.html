@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Change Attribute Value</title>
+</head>
+
+<body>
+    <img id="MyImg" width="100" height="100" src="https://cdn-icons-png.flaticon.com/128/2111/2111379.png"><br><br>
+
+    <button onclick="ChangeAttr()">Change</button>
+
+    <script>
+        function ChangeAttr() {
+            var MyImg = document.getElementById('MyImg');
+            MyImg.src = "https://cdn-icons-png.flaticon.com/128/2111/2111552.png"
+            MyImg.width = "125"
+            MyImg.height = "125"
+        }
+    </script>
+</body>
+
+</html>
