@@ -18,18 +18,20 @@ console.log("The value of Math E", Math.E);
 
 
 
-let a = 35.8755;
-let b = 25.2205;
+let a = 35.8755; // round - Output 36
+let b = 25.2205; // round - Output 25
 console.log(a, b);
 console.log(Math.round(a), Math.round(b)); // Returns x rounded to its nearest integer
 
 
 
-console.log(Math.pow(2, 12));
-console.log(Math.pow(3, 7));
+// Math.pow(x, y) returns the value of x to the power of y
+console.log(Math.pow(8, 4)); // 4096
+console.log(Math.pow(9, 3)); // 729
 
 
 
+// Math.random() returns a random number between 0 (inclusive), and 1 (exclusive)
 console.log(Math.random());
 
 
@@ -47,13 +49,14 @@ console.log(Math.sqrt(81)); // Square root
 
 
 
-console.log(Math.ceil(5.8)); // Ceil // Returns x rounded up to its nearest integer
-console.log(Math.floor(5.8)); // Floor // Returns x rounded down to its nearest integer
+console.log(Math.ceil(5.8)); // Ceil // Returns x rounded up to its nearest integer (6)
+console.log(Math.floor(5.8)); // Floor // Returns x rounded down to its nearest integer (5)
 
 
 
-console.log(Math.abs(5.55)); // Abs
-console.log(Math.abs(-5.55)); // Abs
+// Math.abs() returns the absolute (positive)
+console.log(Math.abs(5.55)); // Output 5.55
+console.log(Math.abs(-5.55)); // Output 5.55
 
 
 
