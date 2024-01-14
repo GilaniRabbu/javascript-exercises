@@ -57,3 +57,19 @@ console.log(k === l); // Output false;
 
 
 // ========================================
+
+
+
+// UserName Generator with String
+
+// let fullName = prompt("Enter your Full Name without Spaces");
+
+let fullName = "GilaniRabbu";
+
+let userName = "@" + fullName + fullName.length;
+
+console.log(userName);
+
+
+
+// ========================================
