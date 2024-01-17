@@ -149,3 +149,20 @@ var improvedDonuts = Donuts.map(function (donut) {
     return donut;
 });
 console.log(improvedDonuts);
+
+
+
+// Qs. Create an array to store companies -> ["Microsoft", "Uber", "Google", "IBM", "Twitter"]
+// 1. Remove the first company from the array
+// 2. Remove Uber & Add Meta in its place
+// 3. Add Amazon at the end
+let companies = ["Microsoft", "Uber", "Google", "IBM", "Twitter"];
+
+companies.splice(1, 1, "Meta");
+console.log(companies);
+
+companies.shift();
+console.log(companies);
+
+companies.push("Amazon");
+console.log(companies);
