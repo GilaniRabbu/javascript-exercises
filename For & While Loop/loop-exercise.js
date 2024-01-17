@@ -19,6 +19,31 @@ console.log(sum); // Total 55
 
 
 
+// Find the average mark
+let marks = [85, 72, 95, 48, 36, 60];
+let Sum = 0;
+for (const val of marks) {
+    Sum += val;
+}
+let avg = Sum / marks.length;
+console.log(`Average marks of the class = ${avg}`); // 66
+
+
+
+// Qs. For a given array with prices of 5 items -> [150, 545, 200, 800, 50]
+// All items have an offer of 10% OFF on them.
+// Change the array to store final price after applying offer.
+let items = [150, 545, 200, 800, 50];
+let idx = 0;
+for (const val of items) {
+    let offer = val / 10;
+    items[idx] -= offer;
+    console.log(`Value after offer = ${items[idx]}`);
+    idx++;
+}
+
+
+
 let msg = "Hello World!";
 for (const key in msg) {
     console.log(`The Item No of ${key} is ${msg}`);
