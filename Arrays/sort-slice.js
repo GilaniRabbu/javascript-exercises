@@ -11,7 +11,7 @@
 // The JavaScript array slice() method extracts the part of the given array
 // and returns it. This method doesn't change the original array.
 
-var numArray = [55, 60, 80, 30, 32, 40, 90];
+var numArray = [55, 60, 80, 30, 32, 40, 90, 95];
 
 var result = numArray.slice(3, 5);
 

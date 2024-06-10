@@ -12,6 +12,6 @@
 
 var arr = ["A", "B", "C", "D", "E"];
 
-var result = arr.splice(3, 1, "K");
+var result = arr.splice(3, 1, "R");
 
-document.write(arr); // Output A,B,C,K,E
+document.write(arr); // Output A,B,C,R,E

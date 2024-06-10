@@ -8,7 +8,7 @@
 
 // Showing results in Number format
 
-var numArray = [30, 32, 40, 55, 60, 80, 90];
+var numArray = [30, 32, 40, 55, 60, 80, 90, 95];
 
 var result = numArray.indexOf(60);
 
