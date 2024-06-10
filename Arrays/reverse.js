@@ -5,5 +5,7 @@
 // This method mutates the array and returns a reference to the same array.
 
 var numArray = [30, 32, 40, 55, 60, 80, 90];
+
 var result = numArray.reverse();
+
 console.log(result);

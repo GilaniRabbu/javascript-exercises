@@ -11,5 +11,7 @@
 // Returns — An array containing the elements that were deleted.
 
 var arr = ["A", "B", "C", "D", "E"];
+
 var result = arr.splice(3, 1, "K");
+
 document.write(arr); // Output A,B,C,K,E
